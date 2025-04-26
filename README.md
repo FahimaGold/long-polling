@@ -26,15 +26,18 @@ Here's how the long-polling flow works:
    ```bash
    cd nodejs
    node server.js
+   ```
 2. Navigate to the `react-client` directory and run:
    ```bash
    npm run dev
+   ```
 
 3. Use `Curl` to post a message to the server, example:
     ```bash
     curl -X POST http://localhost:3000/poll/send \
     -H "Content-Type: application/json" \
-    -d '{"to": "client_kw_01", "message": "your message"}'
+    -d '{"to": "test_client_1", "message": "your message"}'
+    ```
 
 ---
 ## 📒 Notes
@@ -43,6 +46,11 @@ Here's how the long-polling flow works:
 - If no client is connected with the given ID, the server will log that the client is not connected.
 
 - The connection automatically times out after 30 seconds if no message is received.
+
+![Node.js logging](img/nodejs-server-logging.png)
+
+![React message UI](img/react-client-ui.png)
+
 ---
 ## Technologies Used
 - Node.js (Express)

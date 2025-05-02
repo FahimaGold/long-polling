@@ -1,6 +1,6 @@
 # Long-Polling Example
 
-This repository contains examples of **long-polling** implemented in **Node.js**, **Django**, and a simple **React** client.
+This repository demonstrates a practical understanding of long-polling using both Node.js and Django backends, alongside a simple React frontend for testing. It compares traditional loop-based polling with a more efficient Redis BLPOP-based approach, discussing tradeoffs such as CPU usage, latency, and message reliability. Ideal for understanding real-time communication patterns and backend performance tuning.
 
 ---
 
